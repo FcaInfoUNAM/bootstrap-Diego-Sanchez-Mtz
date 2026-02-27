@@ -5,3 +5,35 @@ cuyo valor hexadecimal es #212529.
 ¿Qué es lo que permite que en el formulario la contraseña esté oculta?
 Que el tipo del input es "password", lo que oculta caracteres a medida que se escriben entre 
 algunas otras cosas
+
+¿Dónde deberías agregar CSS en el documento si modificas el estilo de algúna clase?
+El CSS debe agregarse en un archivo externo propio, enlazado después de bootstrap.css en el 
+<head> del documento.
+Esto permite sobrescribir estilos sin modificar el framework original y mantiene una buena 
+práctica de organización y mantenimiento.
+
+¿Bootstrap incorpora algún mecanismo para realizar los cambios del paso 4?
+Bootstrap incorpora clases utilitarias y un sistema de variables CSS que permiten cambiar colores 
+y estilos sin necesidad de modificar el archivo principal.
+Además, Bootstrap define variables que permiten mantener coherencia visual usando solo clases ya 
+definidas por el framework.
+
+¿Cómo cambiarías el fondo por un video?
+Se puede agregar mediante la etiqueta <video> usando posicionamiento con CSS.
+
+Ejemplo:
+HTML:
+<video autoplay muted loop id="videoFondo">
+    <source src="video/fondo.mp4" type="video/mp4">
+</video>
+
+CSS
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
