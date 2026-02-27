@@ -1,0 +1,7 @@
+¿Qué es lo que hace bg-dark y escribe el color hexadecimal del fondo del navbar?
+La clase bg-dark aplica un color de fondo oscuro al elemento utilizando la variable --bs-dark, 
+cuyo valor hexadecimal es #212529.
+
+¿Qué es lo que permite que en el formulario la contraseña esté oculta?
+Que el tipo del input es "password", lo que oculta caracteres a medida que se escriben entre 
+algunas otras cosas

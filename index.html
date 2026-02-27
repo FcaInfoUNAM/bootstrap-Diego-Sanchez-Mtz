@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Laboratorio 3</title>
 </head>
-<nav class="navbar bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="img/logo.png" alt="FCA" height="24" class="d-inline-block align-text-top">
-      Informática
-    </a>
-  </div>
-</nav>
+
 <body>
+    <nav class="navbar bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="FCA" height="40" class="d-inline-block align-text-top">
+          Informática
+        </a>
+      </div>
+    </nav>
     <main>
-      <div class="d-flex justify-content-md-center align-items-center vh-100">
+      <div class="d-flex justify-content-md-center align-items-center py-5">
         <div class="card p-4">
           <img src="img/signIn.png" class="card-img-top img-fluid" style="width:25vw;">
           <div class="card-body">
@@ -28,6 +30,10 @@
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
               <input type="password" class="form-control" id="password">
+            </div>
+            <div class="mb-3">
+              <label for="passwordRepeat" class="form-label">Repeat password</label>
+              <input type="password" class="form-control" id="passwordRepeat">
             </div>
             <div>
               <button class="btn btn-outline-dark" type="submit">SignIn</button>
