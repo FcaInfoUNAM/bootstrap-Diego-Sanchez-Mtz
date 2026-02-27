@@ -1,0 +1,10 @@
+body {
+    background-image: url('../img/signIn.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.75);
+}
